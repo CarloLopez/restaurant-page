@@ -1,1 +1,4 @@
-console.log('test');
+"use strict";
+
+import 'normalize.css';
+import './style.css';
