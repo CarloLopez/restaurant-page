@@ -3,6 +3,7 @@ export default function renderHome() {
     
     const homeContent = document.createElement('div');
     homeContent.classList.add('home-content');
+    homeContent.classList.add('max-container');
 
     const divider = document.createElement('hr');
     divider.classList.add('divider');
