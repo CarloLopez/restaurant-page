@@ -1,3 +1,105 @@
+@font-face {
+    font-family: 'customFont';
+    src: url('./customFont.ttf');
+}
+
+body {
+    font-family: customFont, Arial, Helvetica, sans-serif;
+    background-color: #201d32;
+    background-image: url(./bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    backdrop-filter: blur(0.25rem);
+    min-height: 100vh;
+    color: white;
+    --golden: rgb(212, 141, 34);
+}
+
+.header {
+    font-size: 1.25rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 4rem;
+    position: relative;
+}
+
 button {
-    background-color: orange;
+    border-style: none;
+    background: none;
+    color: white;
+}
+
+nav > button {
+    border-bottom-style: solid;
+    border-width: 0.25rem;
+    border-color: transparent;
+}
+
+nav > button:hover {
+    scale: 105%;
+    border-color: var(--golden);
+    color: var(--golden);
+}
+
+.main-content {
+    height: 70vh;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    height: 100%;
+    text-shadow: 0.25rem 0.15rem #201d32;
+}
+
+hr {
+    width: 10rem;
+    height: 0.25rem;
+    background-color: white;
+    box-shadow: 0.1rem 0.1rem #201d32;
+}
+
+.hero-container,
+.call-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+
+.hero-main {
+    font-size: clamp(3.5rem, 10vw, 5rem);
+    color: var(--golden);
+}
+
+.hero-top {
+    font-size: 1.5rem;
+}
+
+.call-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bookTableButton {
+    background-color: #201d32;
+    border-radius: 0.5rem;
+    width: 8rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.bookTableButton:hover {
+    scale: 105%;
+    color: var(--golden);
 }
