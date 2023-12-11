@@ -1,4 +1,10 @@
-export default function renderHome() {
+function loadHome() {
+    const content = document.querySelector('.main-content');
+    content.innerHTML = '';
+    renderHome();
+}
+
+function renderHome() {
     const content = document.querySelector('.main-content');
     
     const homeContent = document.createElement('div');
@@ -53,3 +59,5 @@ function renderCallToAction() {
 
     return callContainer;
 }
+
+export {loadHome, renderHome};

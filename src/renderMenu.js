@@ -3,7 +3,13 @@ import burgerImg from './img/burger.svg';
 import eggImg from './img/egg.svg';
 import pieImg from './img/pie.svg';
 
-export default function renderMenu() {
+export default function loadMenu() {
+    const content = document.querySelector('.main-content');
+    content.innerHTML = '';
+    renderMenu();
+}
+
+function renderMenu() {
     const content = document.querySelector('.main-content');
 
     const menuContent = document.createElement('div');
